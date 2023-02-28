@@ -83,6 +83,19 @@ console.log (negativeArr.length)
 
 // Знайти найбільший серед елементів масиву, ост альні обнулити.
 
+let max = array[0];
+let maxi = 0;
+for (let i = 1; i < array.length; i++) {
+  if (array[i] > max) {
+    max = array[i];
+    array[maxi] = 0;
+    maxi = i;
+  } else {
+    array[i] = 0;
+  }
+}
+
+console.log(array);
 
 
 
